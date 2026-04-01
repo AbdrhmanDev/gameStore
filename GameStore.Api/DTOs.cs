@@ -27,6 +27,6 @@ public record UpdateGameDto
     public string Name { get; set; } = String.Empty;
     public string Genre { get; set; } = String.Empty;
     public decimal Price { get; set; }
-    public DateTime ReleaseDate { get; set; }
+
     public string ImageUrl { get; set; } = String.Empty;
 }
