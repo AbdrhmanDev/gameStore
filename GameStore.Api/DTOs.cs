@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.Api;
 
-public record GameDto
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = String.Empty;
-    public string Genre { get; set; } = String.Empty;
-    public decimal Price { get; set; }
-    public DateTime ReleaseDate { get; set; }
-    public string ImageUrl { get; set; } = String.Empty;
-}
+public record GameDto(int Id, string Name, string Genre, decimal Price, DateTime ReleaseDate, string ImageUrl);
 public record CreateGameDto
 {
     [Required]

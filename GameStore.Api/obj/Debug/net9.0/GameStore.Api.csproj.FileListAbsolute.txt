@@ -31,3 +31,4 @@ H:\netprojects\gameStore\GameStore.Api\bin\Debug\net9.0\MiniValidation.dll
 H:\netprojects\gameStore\GameStore.Api\obj\Debug\net9.0\GameStore.Api.csproj.AssemblyReference.cache
 H:\netprojects\gameStore\GameStore.Api\obj\Debug\net9.0\GameStore.Api.MvcApplicationPartsAssemblyInfo.cs
 H:\netprojects\gameStore\GameStore.Api\obj\Debug\net9.0\GameStor.5118A84D.Up2Date
+H:\netprojects\gameStore\GameStore.Api\obj\Debug\net9.0\GameStore.Api.sourcelink.json
