@@ -9,3 +9,4 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=$sa_password" -p 1433:1433 -v ${pw
 ##Setting the connection string to secret manager
 ``` powershell
 dotnet user-secrets set "ConnectionStrings:GameStoreContext" "Server=localhost;Database=GameStore;User Id=sa;Password=Password123!"
+dotnet user-secrets set "ConnectionStrings:GameStoreContext" "Server=127.0.0.1,1433;Database=GameStore;User Id=sa;Password=Password123!;TrustServerCertificate=True;"
