@@ -53,7 +53,7 @@ public static class GameEndpoints
             existingGame.ImageUrl = updateGameDto.ImageUrl;
             repository.UpdateGame(existingGame);
             return Results.Ok(existingGame);
-        });
+        }).RequireAuthorization();
         group.MapDelete("/{id}", (IGamesRepository repository, int id) =>
           {
               Game? existingGame = repository.GetGameById(id);

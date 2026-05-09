@@ -9,6 +9,9 @@ builder.Services.AddSingleton<IGamesRepository, InMemoryGamesRepository>();
 
 var connString = builder.Configuration.GetConnectionString("GameStoreContext");
 builder.Services.AddDbContext<GameStoreContext>(options => options.UseSqlServer(connString));
+builder.Services.AddAuthentication().AddJwtBearer();
+
+builder.Services.AddAuthorization();
 var app = builder.Build();
 app.MapGroup("/")
    .MapGameEndpoints();
