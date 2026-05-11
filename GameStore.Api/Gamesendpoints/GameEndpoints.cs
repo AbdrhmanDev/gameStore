@@ -22,7 +22,7 @@ public static class GameEndpoints
             return game is not null ? Results.Ok(game) : Results.NotFound();
 
 
-        }).WithName(GetGameEndpoint);
+        }).WithName(GetGameEndpoint).RequireAuthorization();
         group.MapPost("/", (IGamesRepository repository, CreateGameDto CreateGameDto) =>
         {
             Game game = new()
